@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Video Background with Sliding Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.text-slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 10s infinite;
+}
+
+.text-slider p {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0; /* Hide all slides initially */
+}
+
+.text-slider p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.text-slider p:nth-child(2) {
+  animation-delay: 5s; /* Delay for the second slide */
+}
+
+.text-slider p:nth-child(3) {
+  animation-delay: 10s; /* Delay for the third slide */
+}
+
+/* Add more nth-child rules for additional slides if needed */
+
+.left-button {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.text-slider p{
+    color: #fff;
+}
+
+@keyframes slide {
+  0%, 100% { opacity: 0; transform: translateX(0); }
+  20%, 80% { opacity: 1; transform: translateX(0); }
+  33%, 100% { opacity: 0; transform: translateX(-100%); }
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+  .video-container {
+    height: 300px;
+  }
+}
+
+
+    </style>
+
+
+  <div class="video-container">
+    <video class="background-video" loop autoplay muted>
+      <source src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/videos/cnexiatech_V4-1689075524509.mp4" type="video/mp4">
+    </video>
+    <div class="text-container">
+      <div class="text-slider">
+        <p>Slide 1 - Your text goes here</p>
+        <p>Slide 2 - More text for sliding</p>
+        <p>Slide 3 - Keep adding as many slides as you want</p>
+        <!-- Add more slides if needed -->
+      </div>
+    </div>
+    <button class="left-button">Click Me</button>
+  </div>
+</body>
+</html>

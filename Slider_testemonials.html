@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider_testemonials">
+        <div class="slider">
+            <div class="slides">
+              <div class="slide" id="slide1">
+                <img src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/abstract-glob-connections-1683022488268.png" alt="">
+                <!-- Content for slide 1 -->
+              </div>
+              <div class="slide" id="slide2">
+                <img src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/abstract-glob-connections-1683022488268.png" alt="">
+                <!-- Content for slide 2 -->
+              </div>
+              <div class="slide" id="slide3">
+                <!-- Content for slide 3 -->
+              </div>
+            </div> 
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-control-left" onclick="prevSlide()">&#8249;</button>
+            <button class="slider-control-right" onclick="nextSlide()">&#8250;</button>
+        </div>
+
+    </div>
+    
+
+
+    
+      
+      <style>
+
+        
+      .slider {
+        position: relative;
+        max-width: 1200px;
+        overflow: hidden;
+        margin: auto;
+      }
+      
+      .slides {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease;
+      }
+      
+      .slide {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+      
+      .slider-controls {
+        position: relative;
+        bottom: 5px;
+        left: 100%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 100;
+      }
+      
+      .slider-control-left {
+        display: absolute;
+        font-size: 24px;
+        color: gray;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        margin: 0 5px;
+        
+        
+      }
+
+      .slider-control-right {
+        display: absolute;
+        font-size: 24px;
+        color: gray;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        margin: 0 5px;
+      }
+      
+      
+      /* Hide the button outline on click */
+      .slider-control:focus {
+        outline: none;
+      }
+      </style>
+      
+      <script>
+        var currentSlide = 0;
+        var totalSlides = document.getElementsByClassName('slide').length;
+      
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateSlide();
+        }
+      
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateSlide();
+        }
+      
+        function updateSlide() {
+          var slides = document.getElementsByClassName('slide');
+          var slideWidth = slides[0].offsetWidth;
+          var transformValue = currentSlide * -slideWidth + 'px';
+          slides[0].parentElement.style.transform = 'translateX(' + transformValue + ')';
+        }
+      </script>
+      
+       
+</body>
+</html>

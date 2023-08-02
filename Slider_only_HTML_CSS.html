@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    
+    <div class="slides">
+      <div class="slide" id="slide1-content">
+        <img style="max-width: 1920px;" src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/abstract-glob-connections-1683022488268.png" alt="">
+      </div>
+      <div class="slide" id="slide2-content">
+        <img src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/abstract-colored-waes-1683022668553.png" alt="">
+        <!-- Content for slide 2 -->
+      </div>
+      <div class="slide" id="slide3-content">
+        <video width=100%  preload="auto" autoplay loop muted="muted" volume="0"> 
+          <source src="https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/videos/pexels-ingrid-north-4478322-3840x2160-25fps-1683028852450.mp4" type="video/mp4"> 
+      </video>
+
+        <!-- Content for slide 3 -->
+      </div>
+    </div>
+    
+    <label for="slide1" class="slider-navigation"></label>
+    <label for="slide2" class="slider-navigation"></label>
+    <label for="slide3" class="slider-navigation"></label>
+    
+    <label for="slide1" class="slider-control prev">&#8249;</label>
+    <label for="slide3" class="slider-control next">&#8250;</label>
+  </div>
+  
+  <style>
+  .slider {
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow: hidden;
+    width: 300%; /* Adjust the width based on the number of slides */
+    animation: slide 30s infinite;
+  }
+  
+  .slide {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .slider-navigation {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + .slider-navigation {
+    background-color: black;
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: gray;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Automatic slide transitioning */
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    16.666%, 50% {
+      transform: translateX(-33.333%);
+    }
+    66.666%, 83.333% {
+      transform: translateX(-66.666%);
+    }
+  }
+  </style>
+  
+  
+
+
+
+
+</body>
+</html>

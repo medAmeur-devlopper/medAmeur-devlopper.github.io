@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Multi-Item Carousel</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .carousel_N1234 {
+        position: relative;
+        max-width: 1200px;
+        overflow: hidden;
+        background: #00966C;
+        filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+      }
+
+      .carousel_N1234__slide {
+        display: flex;
+        margin: 5%;
+        transition: transform 0.3s ease;
+      }
+
+      .carousel_N1234__item {
+        
+      
+      }
+
+      .carousel_N1234__arrow {
+        position: absolute;
+        top: 85%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 50px;
+        background-color: #044123;
+        border-radius: non;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        z-index: 100;
+      }
+
+      .carousel_N1234__arrow:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .carousel_N1234__arrow--prev {
+        right: 100px;
+      }
+
+      .carousel_N1234__arrow--next {
+        right: 15px;
+      }
+
+      .carousel_N1234__arrow svg {
+        width: 20px;
+        height: 20px;
+        fill: #333;
+      }
+
+      .carousel_N1234__arrow.hidden {
+        display: none;
+      }
+
+      .carousel_N1234__dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+      }
+
+      .carousel_N1234__dot {
+        width: 15px;
+        height: 15px;
+        background-color: rgba(208, 208, 208, 0.5);
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .carousel_N1234__dot:last-child {
+        margin-right: 0;
+      }
+
+      .carousel_N1234__dot.active {
+        background-color: #044123;
+      }
+
+
+
+
+
+      .item_container_N1234{
+        max-width: 900px;
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+      }
+      .Temoignage_content{
+        font-size: 26px;
+        color: white;
+      }
+
+
+      .Job_title{
+        color: white;
+        font-size: 18px;
+      }
+
+      .carousel_N1234__item{
+        
+      }
+
+ 
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="carousel_N1234">
+      <div class="carousel_N1234__slide">
+        <div class="carousel_N1234__item">
+          <div class="item_container_N1234">
+           
+            <div class="first_element">
+              <svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_631_1177)">
+                <path d="M54.0831 38.4539C46.6776 38.4837 39.2738 38.5136 31.8683 38.5434C31.6473 38.5434 31.4247 38.5451 31.1428 38.5467C31.1428 38.2815 31.1411 38.0776 31.1395 37.872C31.1065 30.5847 31.0718 23.2958 31.0537 16.0085C31.0537 15.6587 31.1444 15.2774 31.2994 14.9625C33.6541 10.1419 36.0286 5.33285 38.385 0.512232C38.5548 0.164113 38.7461 0.039785 39.1336 0.039785C42.6014 0.039785 46.0675 0.0182348 49.5353 0.00331542L50.0926 0C47.5598 5.15216 45.06 10.2364 42.5387 15.367C42.7283 15.3869 42.8438 15.4117 42.9592 15.4117C46.5308 15.3985 50.1025 15.3819 53.6741 15.3637C53.7764 15.3637 53.8803 15.3371 53.9825 15.3239C54.0171 23.0339 54.0501 30.7439 54.0847 38.4539H54.0831Z" fill="white"/>
+                <path d="M19.4795 0.169121C16.95 5.31465 14.4568 10.3889 11.9207 15.5493C15.7776 15.5328 19.5471 15.5145 23.3496 15.498L23.4518 38.5434C15.8402 38.5782 8.23524 38.6114 0.54449 38.6462V38.1108C0.509862 30.7539 0.475234 23.3969 0.452148 16.0384C0.452148 15.7715 0.516458 15.4797 0.633534 15.241C3.02123 10.3607 5.42211 5.48539 7.81805 0.608414C7.93348 0.371362 8.02087 0.175752 8.37375 0.175752C11.98 0.17741 15.5863 0.154202 19.1926 0.139282C19.2602 0.139282 19.3278 0.152544 19.4778 0.169121H19.4795Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_631_1177">
+                <rect width="53.6308" height="38.6462" fill="white" transform="translate(0.452148)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="Temoignage_content">
+              <p>
+                Je viens de rejoindre Cnexia tech, j'ai apprécié la flexibilité et l'autonomie que j'ai eues pour travailler sur des projets passionnants qui ont un impact réel. Nous avons un environnement de travail agréable et stimulant qui favorise la créativité et l'innovation.
+              </p>
+            </div>
+
+            <div class="Job_title">
+              <p>
+               <span style="font-weight: 700;">Zakaria O</span>  <br>
+                Business Analyst
+              </p>
+            </div>
+              
+          </div>
+        </div>
+        <div class="carousel_N1234__item">
+          <div class="item_container_N1234">
+            
+              
+              
+          </div>
+        </div>
+        <div class="carousel_N1234__item">
+          <div class="item_container_N1234">
+            
+          </div>
+        </div>
+        <div class="carousel_N1234__item">
+          <div class="item_container_N1234">
+            
+              
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel_N1234__arrow carousel_N1234__arrow--prev">
+        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.8664 31.666L1.83984 16.8654L15.8664 2.0647" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+                   
+      </div>
+      <div class="carousel_N1234__arrow carousel_N1234__arrow--next">
+        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.29918 31.666L16.3257 16.8654L2.29918 2.0647" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+           
+      </div>
+      <div class="carousel_N1234__dots">
+        <div class="carousel_N1234__dot active"></div>
+        <div class="carousel_N1234__dot"></div>
+        <div class="carousel_N1234__dot"></div>
+        <div class="carousel_N1234__dot"></div>
+      </div>
+    </div>
+
+    <script>
+      const carousel_N1234 = document.querySelector('.carousel_N1234');
+      const slide = carousel_N1234.querySelector('.carousel_N1234__slide');
+      const items = carousel_N1234.querySelectorAll('.carousel_N1234__item');
+      const prevButton = carousel_N1234.querySelector('.carousel_N1234__arrow--prev');
+      const nextButton = carousel_N1234.querySelector('.carousel_N1234__arrow--next');
+      const dots = carousel_N1234.querySelectorAll('.carousel_N1234__dot');
+
+      let slideIndex = 0;
+
+      function showSlide(index) {
+        slide.style.transform = `translateX(-${index *100}%)`;
+        slideIndex = index;
+
+        updateNavigation();
+      }
+
+      function updateNavigation() {
+        dots.forEach((dot, index) => {
+          if (index === slideIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+
+        if (slideIndex === 0) {
+          prevButton.classList.add('hidden');
+        } else {
+          prevButton.classList.remove('hidden');
+        }
+
+        if (slideIndex === items.length / 4 - 1) {
+          nextButton.classList.add('hidden');
+        } else {
+          nextButton.classList.remove('hidden');
+        }
+      }
+
+      prevButton.addEventListener('click', () => {
+        if (slideIndex > 0) {
+          showSlide(slideIndex - 1);
+        }
+      });
+
+      nextButton.addEventListener('click', () => {
+        if (slideIndex < items.length / 4 - 1) {
+          showSlide(slideIndex + 1);
+        }
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          showSlide(index);
+        });
+      });
+
+      showSlide(0);
+    </script>
+  </body>
+</html>
+        
