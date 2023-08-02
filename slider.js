@@ -1,30 +1,66 @@
-// Slide Show Script 1 (cnexiatech)
-let slideIndex_cnexiatech = 1;
-showSlides(slideIndex_cnexiatech);
+const slides = document.querySelectorAll('.main_content');
+    const dotsContainer = document.querySelector('.dots');
+    let currentSlide = 0;
+    let sliding = false;
 
-function plusSlides(n) {
-  showSlides(slideIndex_cnexiatech += n);
-}
+    function showSlide(slideIndex) {
+      if (sliding || slideIndex === currentSlide) return;
 
-function currentSlide_cnexiatech(n) {
-  showSlides(slideIndex_cnexiatech = n);
-}
+      sliding = true;
+      const currentSlideElement = slides[currentSlide];
+      const nextSlideElement = slides[slideIndex];
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex_cnexiatech = 1; }    
-  if (n < 1) { slideIndex_cnexiatech = slides.length; }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex_cnexiatech - 1].style.display = "block";  
-  dots[slideIndex_cnexiatech - 1].className += " active";
-}
+      currentSlideElement.classList.remove('show');
+      nextSlideElement.classList.add('show');
 
-// Slide Show Script 2 (NOS TECHNOLGIES)
+      setTimeout(() => {
+        currentSlideElement.style.transform = 'translateX(100%)';
+        nextSlideElement.style.transform = 'translateX(0)';
+        currentSlideElement.classList.remove('show');
+        nextSlideElement.classList.add('show');
+        currentSlide = slideIndex;
+        sliding = false;
+      }, 500);
 
+      updateDots();
+    }
+
+    function nextSlide() {
+      const nextSlideIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextSlideIndex);
+    }
+
+    function prevSlide() {
+      const prevSlideIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prevSlideIndex);
+    }
+
+    function createDots() {
+      slides.forEach((slide, index) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => showSlide(index));
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    function updateDots() {
+      const dots = document.querySelectorAll('.dot');
+      dots.forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.add('active');
+          dot.style.opacity = '1';
+        } else {
+          dot.classList.remove('active');
+          dot.style.opacity = '0.5';
+        }
+      });
+    }
+
+    createDots();
+    showSlide(0);
+
+    // Remove arrow buttons, as we can now navigate using dots
+
+    // Automatically switch slides every 5 seconds (adjust this time as needed)
+    setInterval(nextSlide, 5000);
