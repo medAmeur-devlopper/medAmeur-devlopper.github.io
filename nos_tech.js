@@ -8,7 +8,7 @@ const dots_N1234 = carousel_N1234.querySelectorAll('.carousel_N1234__dot');
 let slideIndex_N1234 = 0;
 
 function showSlide_N1234(index) {
-  slide_N1234.style.transform = `translateX(-${index * 90}%)`;
+  slide_N1234.style.transform = `translateX(-${index * 85}%)`;
   slideIndex_N1234 = index;
 
   updateNavigation();
