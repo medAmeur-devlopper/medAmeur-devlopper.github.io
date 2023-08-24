@@ -29,7 +29,7 @@ function updateNavigation() {
     prevButton_N1234.classList.remove('hidden');
   }
 
-  if (slideIndex_N1234 === items_N1234.length / 4 - 1) {
+  if (slideIndex_N1234 === items_N1234.length / 2 - 1) {
     nextButton_N1234.classList.add('hidden');
   } else {
     nextButton_N1234.classList.remove('hidden');
