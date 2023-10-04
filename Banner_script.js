@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Change the background image every 5 seconds (5000 milliseconds)
-    const interval = 5000; // Adjust the interval as needed
+    const interval = 4000; // Adjust the interval as needed
     setInterval(changeBackgroundImage, interval);
 
     // Initial background image
