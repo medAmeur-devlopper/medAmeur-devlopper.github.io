@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Wassel_final_pic-1696417979047.png",
             text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager». Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi, et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
-            name: "WasselEl Jouni",
-            role: "Compensation Analyst ",
+            name: "Wassel El Jouni",
+            role: "Compensation Analyst",
         },
         // Add more testimonials as needed
     ];
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function showTestimonial(index) {
         const testimonial = testimonials[index];
         if (testimonial) {
-            const testImagesElement = document.querySelector(".test_images");
+            const testImagesElement = document.querySelector(".test_imag");
             const testContentElement = document.querySelector(".test_content");
             
 
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             testImagesElement.style.opacity = 1;
             testContentElement.style.opacity = 1;
             
-            }, 500); // Adjust the delay as needed
+            }, 150); // Adjust the delay as needed
         }
         }
 
@@ -100,4 +100,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start auto-switching initially
     startAutoSwitch();
 });
+
 
