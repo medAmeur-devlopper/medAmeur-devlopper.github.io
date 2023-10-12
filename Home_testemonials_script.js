@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Wassel_final_pic-1696417979047.png",
-            text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager».<br> Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi, et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
+            text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager».<br> Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi,<br> et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
             name: "Wassel EL",
             role: "Compensation Analyst",
         },
