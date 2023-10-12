@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const testimonials = [
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Achraf_final_pic-1696417930252.png",
-            text: "En 2019, j’ai eu l’opportunité d'intégrer Cnexia en tant que responsable de formation avec une mission extrêmement challengeante, celle de bâtir une équipe de formation passionnée et capable de soutenir la croissance de notre société.",
+            text: "J’ai intégré Cnexia en 2019 en tant que responsable de formation avec une mission extrêmement challengeante, celle de bâtir une équipe de formation passionnée. Aujourd'hui, ma mission consiste à développer des programmes de formation capables de soutenir le développement professionnel de nos talents, répondre à leurs besoins et les aider à atteindre leurs objectifs.",
             name: "Achraf T",
             role: "Learning Manager",
         },
