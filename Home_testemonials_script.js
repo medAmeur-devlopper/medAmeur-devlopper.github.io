@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const testimonials = [
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Achraf_final_pic-1696417930252.png",
-            text: "J’ai intégré Cnexia en 2019 en tant que responsable de formation avec une mission extrêmement challengeante, celle de bâtir une équipe de formation passionnée. Aujourd'hui, ma mission consiste à développer des programmes de formation capables de soutenir le développement professionnel de nos talents, répondre à leurs besoins et les aider à atteindre leurs objectifs.",
+            text: "J’ai intégré Cnexia en 2019 en tant que responsable de formation avec une mission extrêmement challengeante, celle de bâtir une équipe de formation passionnée.<br> Aujourd'hui, ma mission consiste à développer des programmes de formation capables de soutenir le développement professionnel de nos talents, répondre à leurs besoins et les aider à atteindre leurs objectifs.",
             name: "Achraf T",
             role: "Learning Manager",
         },
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Wassel_final_pic-1696417979047.png",
-            text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager». Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi, et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
+            text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager».<br> Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi, et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
             name: "Wassel EL",
             role: "Compensation Analyst",
         },
