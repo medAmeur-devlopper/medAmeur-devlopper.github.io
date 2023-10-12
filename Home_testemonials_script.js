@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Achraf_final_pic-1696417930252.png",
             text: "En 2019, j’ai eu l’opportunité d'intégrer Cnexia en tant que responsable de formation avec une mission extrêmement challengeante, celle de bâtir une équipe de formation passionnée et capable de soutenir la croissance de notre société.",
-            name: "Achraf Tommis",
+            name: "Achraf T",
             role: "Learning Manager",
         },
         {
             imageSrc: "https://assets.phenompeople.com/CareerConnectResources/prod/CNEXEMEA/images/Wassel_final_pic-1696417979047.png",
             text: "Mon aventure chez Cnexia a débuté en 2019 en tant que conseiller client. Ensuite j’ai occupé le poste de «Quality Analyst», qui m’a permis d’être rapidement promu «Team Manager». Actuellement j’occupe le poste «Compensation Analyst», qui est une nouvelle aventure pour moi, et je suis enthousiaste à l'idée de contribuer à la croissance de notre société.",
-            name: "Wassel El Jouni",
+            name: "Wassel EL",
             role: "Compensation Analyst",
         },
         // Add more testimonials as needed
